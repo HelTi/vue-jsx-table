@@ -231,6 +231,3 @@ pageChangeHandle(val) {
 | showHeaderTooltip  | 鼠标移到表头是否展示文案提示信息|  Boolean |  - |
 | headerTooltipText  | 表头展示文案信息内容|  String |  - |
 
-
-## 查看demo
-[完整例子](./demo.vue)
