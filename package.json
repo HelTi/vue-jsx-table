@@ -1,15 +1,22 @@
 {
   "name": "vue-jsx-table",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "npm run build:lib && npm run build:example",
+    "build:lib":"vue-cli-service build --target lib --name vue-jsx-table src/components/index.js",
+    "build:example": "vue-cli-service build --mode example",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint"
   },
+  "files": [
+    "dist",
+    "src/components"
+  ],
   "dependencies": {
     "core-js": "^3.6.5",
+    "element-ui": "^2.15.5",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -28,5 +35,10 @@
     "prettier": "^2.2.1",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "jsnext:main": "dist/vue-jsx-table.umd.min.js",
+  "bugs": {
+    "url": "https://github.com/HelTi/vue-jsx-table/issues"
+  },
+  "homepage": "https://github.com/HelTi/vue-jsx-table#readme"
 }
