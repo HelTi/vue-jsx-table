@@ -3,6 +3,8 @@
 此组件基于element-table二次开发，以实际业务出发，封装了常用的功能，通过配置的方式生成表格，
 并且实现**多级表头** **expand展开项** **自定义表头**功能等
 
+[![hpyJmt.png](https://z3.ax1x.com/2021/08/22/hpyJmt.png)](https://imgtu.com/i/hpyJmt)
+
 ## 普通表格
 对于表格配置columns、tableData选项是必须的。
 
