@@ -2,6 +2,9 @@
   "name": "vue-jsx-table",
   "version": "0.1.0",
   "private": false,
+  "main": "dist/vue-jsx-table.umd.min.js",
+  "unpkg": "dist/vue-jsx-table.umd.min.js",
+  "jsnext:main": "dist/vue-jsx-table.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "npm run build:lib && npm run build:example",
@@ -12,7 +15,7 @@
   },
   "files": [
     "dist",
-    "src/components"
+    "src"
   ],
   "dependencies": {
     "core-js": "^3.6.5",
@@ -36,7 +39,6 @@
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
   },
-  "jsnext:main": "dist/vue-jsx-table.umd.min.js",
   "bugs": {
     "url": "https://github.com/HelTi/vue-jsx-table/issues"
   },
