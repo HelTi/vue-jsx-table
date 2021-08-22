@@ -5,6 +5,14 @@
 
 [![hpyJmt.png](https://z3.ax1x.com/2021/08/22/hpyJmt.png)](https://imgtu.com/i/hpyJmt)
 
+## 使用
+```js
+npm i vue-jsx-table
+
+import vueJsxTable from 'vue-jsx-table'
+
+Vue.use(vueJsxTable)
+```
 ## 普通表格
 对于表格配置columns、tableData选项是必须的。
 
