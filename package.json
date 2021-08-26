@@ -43,8 +43,5 @@
   "bugs": {
     "url": "https://github.com/HelTi/vue-jsx-table/issues"
   },
-  "homepage": "https://github.com/HelTi/vue-jsx-table#readme",
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
-  }
+  "homepage": "https://github.com/HelTi/vue-jsx-table#readme"
 }
