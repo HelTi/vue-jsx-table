@@ -88,6 +88,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    customClass: {
+      type: Array,
+      default: () => ["vue-jsx-table-wrapper"],
+    },
   },
   mounted() {
     this.initSelectedShowColumns();
@@ -138,7 +142,7 @@ export default {
   render() {
     const that = this;
     return (
-      <div class="z-table-wrapper">
+      <div class="vue-jsx-table-wrapper" class={that.customClass}>
         {that.showTableSetting && (
           <div class="table-setting" on-click={that.openColumnSettingDialog}>
             <i class="el-icon-setting"></i>
@@ -146,7 +150,7 @@ export default {
         )}
         <el-table
           highlight-current-row
-          header-row-class-name="z-table-header"
+          header-row-class-name="vue-jsx-table-header"
           data={this.tableData}
           ref="table"
           {...{
@@ -168,7 +172,7 @@ export default {
 
         {that.showPagination && (
           // 分页组件
-          <div class="z-table-pagination" style={that.paginationStyle}>
+          <div class="vue-jsx-table-pagination" style={that.paginationStyle}>
             <el-pagination
               background
               vOn:size-change={that.handleSizeChange}
@@ -204,8 +208,18 @@ export default {
 </script>
 
 <style lang="scss">
-.z-table-wrapper {
+.vue-jsx-table-wrapper {
   position: relative;
+
+  .vue-jsx-table-pagination {
+    margin-top: 15px;
+  }
+
+  .vue-jsx-table-header {
+    th {
+      background-color: #fafafa !important;
+    }
+  }
 
   .table-setting {
     position: absolute;
@@ -223,14 +237,25 @@ export default {
       font-size: 18px;
     }
   }
-}
-.z-table-pagination {
-  margin-top: 15px;
-}
 
-.z-table-header {
-  th {
-    background-color: #fafafa !important;
+  // el-dialog 样式
+  .el-dialog__header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    min-height: 16px;
+  }
+
+  .el-dialog__title {
+    font-size: 16px;
+  }
+
+  .el-dialog__headerbtn {
+    top: 16px;
+  }
+
+  // 修复表头标线错位的问题
+  .el-table--border th.gutter:last-of-type {
+    display: block !important;
   }
 }
 </style>

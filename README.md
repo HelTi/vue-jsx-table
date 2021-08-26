@@ -6,12 +6,27 @@
 [![hpyJmt.png](https://z3.ax1x.com/2021/08/22/hpyJmt.png)](https://imgtu.com/i/hpyJmt)
 
 ## 使用
+使用之前需要项目中引入element-ui
+
 ```js
 npm i vue-jsx-table
 
+import 'vue-jsx-table/dist/vue-jsx-table.css'
 import vueJsxTable from 'vue-jsx-table'
 
 Vue.use(vueJsxTable)
+```
+
+### cdn方式
+
+```js
+  <!-- 引入样式 -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/vue-jsx-table/dist/vue-jsx-table.css"
+    />
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/vue-jsx-table/dist/vue-jsx-table.umd.min.js"></script>
 ```
 ## 普通表格
 对于表格配置columns、tableData选项是必须的。
@@ -210,6 +225,7 @@ pageChangeHandle(val) {
 | showOverflowTooltip  | 当内容过长被隐藏时显示 tooltip，如果column没单独配置showOverflowTooltip，则使用该属性，默认为true |  Boolean |  true |
 | showTableSetting  | 展示表格设置 |  Boolean |  false |
 | hideColumns  | 需要隐藏的列，label名称，有些场景需要根据部分条件展示隐藏列 |  Array |  [] |
+| customClass  | 自定义样式class |  Array |  ['vue-jsx-table-wrapper'] |
 
 ### Table Events
 

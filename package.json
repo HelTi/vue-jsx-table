@@ -1,6 +1,6 @@
 {
   "name": "vue-jsx-table",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "main": "dist/vue-jsx-table.umd.min.js",
   "unpkg": "dist/vue-jsx-table.umd.min.js",
@@ -18,11 +18,12 @@
     "src"
   ],
   "dependencies": {
-    "core-js": "^3.6.5",
-    "element-ui": "^2.15.5",
-    "vue": "^2.6.11"
+ 
   },
   "devDependencies": {
+    "core-js": "^3.6.5",
+    "element-ui": "^2.15.5",
+    "vue": "^2.6.11",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-e2e-nightwatch": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
@@ -42,5 +43,8 @@
   "bugs": {
     "url": "https://github.com/HelTi/vue-jsx-table/issues"
   },
-  "homepage": "https://github.com/HelTi/vue-jsx-table#readme"
+  "homepage": "https://github.com/HelTi/vue-jsx-table#readme",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  }
 }
