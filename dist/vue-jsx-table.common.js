@@ -3418,6 +3418,12 @@ var COLUMN_KEY_ID = 1;
     showTableSetting: {
       type: Boolean,
       default: false
+    },
+    customClass: {
+      type: Array,
+      default: function _default() {
+        return ["vue-jsx-table-wrapper"];
+      }
     }
   },
   mounted: function mounted() {
@@ -3474,7 +3480,7 @@ var COLUMN_KEY_ID = 1;
     var h = arguments[0];
     var that = this;
     return h("div", {
-      "class": "z-table-wrapper"
+      "class": that.customClass
     }, [that.showTableSetting && h("div", {
       "class": "table-setting",
       "on": {
@@ -3485,7 +3491,7 @@ var COLUMN_KEY_ID = 1;
     })]), h("el-table", {
       "attrs": {
         "highlight-current-row": true,
-        "header-row-class-name": "z-table-header",
+        "header-row-class-name": "vue-jsx-table-header",
         "data": this.tableData
       },
       "ref": "table",
@@ -3502,7 +3508,7 @@ var COLUMN_KEY_ID = 1;
       });
     })]), that.showPagination && // 分页组件
     h("div", {
-      "class": "z-table-pagination",
+      "class": "vue-jsx-table-pagination",
       "style": that.paginationStyle
     }, [h("el-pagination", {
       "attrs": {
