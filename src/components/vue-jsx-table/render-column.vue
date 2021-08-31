@@ -222,7 +222,7 @@ export default {
 </script>
 
 <style lang="scss">
-.z-table-wrapper {
+.vue-jsx-table-wrapper {
   .table-header-tip-icon {
     margin-left: 6px;
     font-size: 13px;

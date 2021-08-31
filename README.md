@@ -197,7 +197,7 @@ pageChangeHandle(val) {
 
 ## 表格列内容为组件
 
-建议使用solt插槽来使用，废弃了原来的component选项，你也可以使用render函数来渲染组件
+通过solt插槽，也可以使用render函数来渲染组件
 
 ```js
   <template v-slot:edit="{ row }">
