@@ -50,10 +50,8 @@
 </template>
 
 <script>
-import vueJsxTable from "../../components/vue-jsx-table";
 export default {
   name: "index",
-  components: { vueJsxTable },
   data() {
     return {
       columns: [
