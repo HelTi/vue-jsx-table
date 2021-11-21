@@ -2,7 +2,7 @@ module.exports = {
   theme: '',
   title: 'vue-jsx-table',
   description: 'vue-jsx-table文档',
-  base: '/',
+  base: 'vue-jsx-table/',
   port: '8080',
   themeConfig: {
     sidebar: { // 配置侧边栏部分
