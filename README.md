@@ -1,9 +1,11 @@
 # 文档
+[文档示例](https://helti.github.io/vue-jsx-table/)
 
 此组件基于element-table二次开发，以实际业务出发，封装了常用的功能，通过配置的方式生成表格，
 并且实现**多级表头** **expand展开项** **自定义表头**功能等
 
 [![hpyJmt.png](https://z3.ax1x.com/2021/08/22/hpyJmt.png)](https://imgtu.com/i/hpyJmt)
+
 
 ## 使用
 使用之前需要项目中引入element-ui
